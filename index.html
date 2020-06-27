@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanmi's PIG game</title>
+    <link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body onload="loadme()">
+    <div class="instructions">
+        <h4>FR!ZZ's GAME RULES:</h4>
+        <p> 1. This game has two players, playing in rounds.</p>
+        <p>2. In each turn, a player rolls a dice as many times as he wishes. Each result gets added to his "Round"(the
+            white boxes with curved edges)
+            score.</p>
+        <p>3. BUT, if the player rolls a one (1), all his "Round" score gets lost. After that, it's the second player
+            turn.</p>
+        <p>4. The player can choose to "HOLD", by pressing the hold button so as to save the numbers previously rolled
+            in his round to his GLOBAL SCORE(which is the score underneath the player name) which means that his "Round"
+            score gets added to his GLOBAL score. After
+            that, it's the next player turn.</p>
+        <p>5. The first player to reach 100points wins the game.</p>
+
+    </div>
+
+    <p class="ent">Before playing this game, fill this input below to set the total amassed point for a winner to be
+        declared.</p>
+    <input type="text" class="scoreboard">
+    <button type="button" onclick="getInput();">Enter</button>
+
+
+    <a href="http://www.facebook.com/geefreeze" onclick="return clicke()">Click me to go to Fr!zz's facebook page...</a>
+
+
+    <h3 class="kanmi">Welcome to Kanmi's game, enjoy!!!</h3>
+    <div class="wrapper clearfix">
+        <div class="button-new"><button class="btn-new">NEW GAME</button></div>
+        <div class="player-0 box ">
+            <h1 class="name-0 active">Player 1
+            </h1>
+            <div class="player-score score-0 activ" id="score-0">A</div>
+            <div class="current-score current-score-0" id="current-score-0">7</div>
+        </div>
+        <div class="player-1 box">
+            <h1 class="name-1">Player 2
+            </h1>
+            <div class="player-score score-1 activ" id="score-1">B</div>
+            <div class="current-score current-score-1" id="current-score-1">16</div>
+        </div>
+        <div><img src="images/dice-6.png" alt="" class="dice"></div>
+        <!-- <div><img src="images/dice-5.png" alt="" class="dicey"></div> -->
+
+        <button class="btn-roll">ROLL DICE</button>
+        <div id="#btn-hold"><button class="btn-hold">HOLD</button></div>
+    </div>
+
+
+</body>
+<script src="game.js"></script>
+
+</html>
