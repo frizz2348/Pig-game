@@ -8,7 +8,7 @@ function loadme() {
     var name = prompt('What\'s your name?');
     alert('Thanks for visiting my site ' + name + '.');
     
-    alert('Please If you\'re on mobile device, kindly tilt your phone to the "landscape mode" for better viewing, thanks.
+    alert('Please If you\'re on mobile device, kindly tilt your phone to the "landscape mode" for better viewing, thanks.)
 }
 
 
