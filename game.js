@@ -1,12 +1,12 @@
 
 function loadme() {
     alert('Welcome to Kanmi\'s pig game which is one of the best online, play and come back and give testimony...   Press "ok" to continue.');
-    var name = prompt('What\'s your name?');
-    alert('Thanks for visiting my site ' + name + '.');
-    
     alert('Please If you\'re on mobile device, kindly tilt your phone to the "landscape mode" for better viewing, thanks.')
 }
 
+  var name = prompt('What\'s your name?');
+    alert('Thanks for visiting my site ' + name + '.');
+    
 
 function welcom() {
     alert('Hey Nsa, i\'m going to tell you a little secret about Kanmi. If you would like to know click okay');
@@ -40,7 +40,7 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
         diceDom.style.display = 'inline';
 
 
-        diceDom.src = '../images/dice-' + dice + '.PNG';
+        diceDom.src = '../dice-' + dice + '.png';
         // add the score to the round score
         roundScore += dice;
         document.querySelector('.current-score-' + activePlayer).textContent = roundScore;
@@ -115,7 +115,7 @@ function init() {
     document.querySelector('.name-0').classList.add('active');
 
     function display() {
-       alert('Hey you just clicked "new game", press "ok" to continue.')
+       alert('Hey ' + name + ', you just clicked "new game", press "ok" to continue.')
     }
     setTimeout(display, 1400);
 
