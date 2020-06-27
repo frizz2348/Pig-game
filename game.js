@@ -5,6 +5,10 @@
 
 function loadme() {
     alert('Welcome to Kanmi\'s pig game which is one of the best online, play and come back and give testimony...   Press "ok" to continue.');
+    var name = prompt('What\'s your name?');
+    alert('Thanks for visiting my site ' + name + '.')
+    
+    alert('Please If you\'re on mobile device, kindly tilt your phone to the "landscape mode" for better viewing, thanks.
 }
 
 
@@ -116,7 +120,7 @@ function init() {
     document.querySelector('.name-0').classList.add('active');
 
     function display() {
-       alert('If you like click "new game" till tomorrow, you will keep losing..')
+       alert('Hey there, you just clicked "new game", enjoy!')
     }
     setTimeout(display, 1400);
 
