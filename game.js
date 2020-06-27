@@ -27,7 +27,7 @@ function welcom2() {
 var scores, roundScore, activePlayer, dice, gamePlaying;
 init();
 
-var lastDice;
+//var lastDice;
 /******** EVENTS AND EVENT HANDLING ***********/
 
 document.querySelector('.btn-roll').addEventListener('click', function () {
@@ -44,7 +44,7 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
         diceDom.style.display = 'inline';
 
 
-        diceDom.src = '../images/dice-' + dice + '.png';
+        diceDom.src = '../images/dice-' + dice + '.PNG';
         // add the score to the round score
         roundScore += dice;
         document.querySelector('.current-score-' + activePlayer).textContent = roundScore;
