@@ -73,10 +73,11 @@ a {
     color: cyan;
     text-decoration: none;
     font-weight: 600;
-    margin: 10px;
+    margin: 15px;
+    padding: 5px;
     border: 1px, dashed, red;
     border-radius: .5em;
-    background: rgb(234, 240, 240);
+    background: rgb(14, 10, 10);
 }
 
 .box {
