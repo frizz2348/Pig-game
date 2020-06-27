@@ -2,7 +2,7 @@ body{
     background-color: rgb(19, 22, 66);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    background: url(images/silhouette-photography-of-man-and-woman-beside-trees-during-1024973.JPG);
+    background: url(../silhouette-photography-of-man-and-woman-beside-trees-during-1024973.jpg);
     background-size: cover;
 }
 
@@ -62,7 +62,10 @@ h1 {
     font-weight: 500;
     position: absolute;
     left: 10%;
-    color: rgb(70, 233, 245);
+    background: black;
+    color: red;
+    border: 1px, solid, cyan;
+    border-radius: .5em;
 
 }
 
