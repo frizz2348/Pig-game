@@ -113,14 +113,14 @@ function init() {
     document.querySelector('.score-1').textContent = '0';
     document.querySelector('.current-score-0').textContent = '0';
     document.querySelector('.current-score-1').textContent = '0';
-    document.querySelector('.name-0').textContent = 'Kanmi';
-    document.querySelector('.name-1').textContent = 'Nsa';
+    document.querySelector('.name-0').textContent = 'Player 1';
+    document.querySelector('.name-1').textContent = 'Player 2';
     document.querySelector('.name-0').classList.remove('active');
     document.querySelector('.name-1').classList.remove('active');
     document.querySelector('.name-0').classList.add('active');
 
-    function display() {
-       alert('Hey there, you just clicked "new game", enjoy!')
+    function display=() {
+       alert('Hey ' + name + ', you just clicked "new game", press "ok" to continue.')
     }
     setTimeout(display, 1400);
 
