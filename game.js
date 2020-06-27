@@ -1,7 +1,6 @@
 
 function loadme() {
     alert('Welcome to Kanmi\'s pig game which is one of the best online, play and come back and give testimony...   Press "ok" to continue.');
-    alert('Please If you\'re on mobile device, kindly tilt your phone to the "landscape mode" for better viewing, thanks.')
 }
 
   var name = prompt('What\'s your name?');
@@ -108,8 +107,8 @@ function init() {
     document.querySelector('.score-1').textContent = '0';
     document.querySelector('.current-score-0').textContent = '0';
     document.querySelector('.current-score-1').textContent = '0';
-    document.querySelector('.name-0').textContent = 'Player 1';
-    document.querySelector('.name-1').textContent = 'Player 2';
+    document.querySelector('.name-0').textContent = name;
+    document.querySelector('.name-1').textContent = 'Frizz';
     document.querySelector('.name-0').classList.remove('active');
     document.querySelector('.name-1').classList.remove('active');
     document.querySelector('.name-0').classList.add('active');
