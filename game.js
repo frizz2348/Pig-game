@@ -40,19 +40,19 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
         diceDom.style.display = 'inline';
 
 
-        diceDom.src = 'images/dice-' + dice + '.png';
+        diceDom.src = '../images/dice-' + dice + '.png';
         // add the score to the round score
         roundScore += dice;
         document.querySelector('.current-score-' + activePlayer).textContent = roundScore;
         console.log(roundScore);
 
         // the player loses his turn by rolling a 1
-        if (dice === 6 && lastDice === 6) {
+        /* if (dice === 6 && lastDice === 6) {
             document.querySelector('.score-' + activePlayer).textContent = 0;
             scores[activePlayer] = 0;
 
             nextPlayer();
-        }
+        } */
 
         // hide image when a player rolls a one 
         if (dice === 1) {
@@ -61,7 +61,7 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
     } else {
 
     }
-    lastDice = dice;
+   // lastDice = dice;
 })
 
 document.querySelector('.btn-hold').addEventListener('click', function () {
@@ -146,18 +146,18 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
     if (gamePlaying) {
         var dice = Math.floor(Math.random() * 6) + 1;
         console.log(dice);
-        var dicey = Math.floor(Math.random() * 6) + 1;
+        // var dicey = Math.floor(Math.random() * 6) + 1;
         // let the random number be displayed as the dice value
         var diceDom = document.querySelector('.dice')
-        var diceyDom = document.querySelector('.dicey')
+       // var diceyDom = document.querySelector('.dicey')
 
         diceDom.style.display = 'inline';
-        diceyDom.style.display = 'inline';
+       // diceyDom.style.display = 'inline';
 
-        diceDom.src = 'images/dice-' + dice + '.png';
-        diceyDom.src = 'images/dice-' + dicey + '.png';
+        diceDom.src = '../images/dice-' + dice + '.png';
+        // diceyDom.src = 'images/dice-' + dicey + '.png';
         // add the score to the round score
-        roundScore += dice + dicey;
+        roundScore += dice;
         document.querySelector('.current-score-' + activePlayer).textContent = roundScore;
         console.log(roundScore);
 
@@ -165,7 +165,7 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
 
 
         // hide image when a player rolls a one
-        if (dice === 1 || dicey === 1) {
+        if (dice === 1) {
             nextPlayer();
         }
     } else {
