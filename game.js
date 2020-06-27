@@ -1,7 +1,3 @@
-/************** THE DOM AND DOM MANIPULATION **************/
-
-/********* PROJECT SETUP AND DETAILS ***********/
-
 
 function loadme() {
     alert('Welcome to Kanmi\'s pig game which is one of the best online, play and come back and give testimony...   Press "ok" to continue.');
@@ -54,7 +50,6 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
         /* if (dice === 6 && lastDice === 6) {
             document.querySelector('.score-' + activePlayer).textContent = 0;
             scores[activePlayer] = 0;
-
             nextPlayer();
         } */
 
@@ -119,7 +114,7 @@ function init() {
     document.querySelector('.name-1').classList.remove('active');
     document.querySelector('.name-0').classList.add('active');
 
-    function display=() {
+    function display() {
        alert('Hey you just clicked "new game", press "ok" to continue.')
     }
     setTimeout(display, 1400);
@@ -154,26 +149,20 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
         // let the random number be displayed as the dice value
         var diceDom = document.querySelector('.dice')
        // var diceyDom = document.querySelector('.dicey')
-
         diceDom.style.display = 'inline';
        // diceyDom.style.display = 'inline';
-
         diceDom.src = '../images/dice-' + dice + '.png';
         // diceyDom.src = 'images/dice-' + dicey + '.png';
         // add the score to the round score
         roundScore += dice;
         document.querySelector('.current-score-' + activePlayer).textContent = roundScore;
         console.log(roundScore);
-
         // the player loses his turn by rolling a 1
-
-
         // hide image when a player rolls a one
         if (dice === 1) {
             nextPlayer();
         }
     } else {
-
     }
 })*/
 
