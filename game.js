@@ -7,18 +7,6 @@ function loadme() {
     alert('Thanks for visiting my site ' + name + '.');
     
 
-function welcom() {
-    alert('Hey Nsa, i\'m going to tell you a little secret about Kanmi. If you would like to know click okay');
-};
-
-function welcom2() {
-    alert('He\'s going to allow you win the first game you guys will play, because he wants to see you smile at the thought of you winning him.')
-};
-
-//setTimeout(welcom, 4000);
-//setTimeout(welcom2, 5000);
-
-
 var scores, roundScore, activePlayer, dice, gamePlaying;
 init();
 
@@ -46,12 +34,7 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
         console.log(roundScore);
 
         // the player loses his turn by rolling a 1
-        /* if (dice === 6 && lastDice === 6) {
-            document.querySelector('.score-' + activePlayer).textContent = 0;
-            scores[activePlayer] = 0;
-            nextPlayer();
-        } */
-
+     
         // hide image when a player rolls a one 
         if (dice === 1) {
             nextPlayer();
@@ -59,7 +42,6 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
     } else {
 
     }
-   // lastDice = dice;
 })
 
 document.querySelector('.btn-hold').addEventListener('click', function () {
@@ -69,7 +51,7 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
 
         document.getElementById('score-' + activePlayer).textContent = scores[activePlayer];
 
-        // check if global score is >= 100, declacre the winner
+        // check if global score is >= input, declacre the winner.
         if (scores[activePlayer] >= getInput()) {
            document.querySelector('.name-' + activePlayer).innerHTML = 'WINNER!';
             document.querySelector('.dice').style.display = 'none';
@@ -78,7 +60,7 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
         } else {
             nextPlayer();
         }
-    }  // 
+    } 
 })
 
 document.querySelector('.btn-new').addEventListener('click', init);
@@ -116,13 +98,13 @@ function init() {
     function display() {
        alert('Hey ' + name + ', you just clicked "new game", press "ok" to continue.')
     }
-    setTimeout(display, 1400);
+   // setTimeout(display, 1400);
 
 }
 
 
 function nextPlayer() {
-    document.querySelector('.dice').style.display = 'none';
+    document.querySelector('.dice').style.display = 'inline';
     roundScore = 0;
     activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
     document.querySelector('.current-score-0').textContent = '0';
@@ -137,33 +119,6 @@ function nextPlayer() {
 function click() {
     alert('And there we have our winner, CONGRATULATIONS!!!');
 };
-
-/*
-document.querySelector('.btn-roll').addEventListener('click', function () {
-    // generate a random number
-    if (gamePlaying) {
-        var dice = Math.floor(Math.random() * 6) + 1;
-        console.log(dice);
-        // var dicey = Math.floor(Math.random() * 6) + 1;
-        // let the random number be displayed as the dice value
-        var diceDom = document.querySelector('.dice')
-       // var diceyDom = document.querySelector('.dicey')
-        diceDom.style.display = 'inline';
-       // diceyDom.style.display = 'inline';
-        diceDom.src = '../images/dice-' + dice + '.png';
-        // diceyDom.src = 'images/dice-' + dicey + '.png';
-        // add the score to the round score
-        roundScore += dice;
-        document.querySelector('.current-score-' + activePlayer).textContent = roundScore;
-        console.log(roundScore);
-        // the player loses his turn by rolling a 1
-        // hide image when a player rolls a one
-        if (dice === 1) {
-            nextPlayer();
-        }
-    } else {
-    }
-})*/
 
 
 var switchDirection = true;
