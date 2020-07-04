@@ -7,32 +7,36 @@
     <link rel="stylesheet" href="mystyle.css">
 </head>
 
-<body onload="loadme()">
+<body>
     <div class="instructions">
         <h4>FR!ZZ's GAME RULES:</h4>
+
+<p> This game has two boxes, one named the ROUND-SCORE(The white box) while the other is named GLOBAL-SCORE(The black box with red borders.).
+The round score is where the dice or numbers you roll goes into while the Global-Score is where the saved "Round-scores" goes into.
+ </p>
+ <h3> The ROLL button is the button for rolling a dice.</h3>
+ <h3> The HOLD button is the button for adding your Round-scores to your Global-Score. Note: Whenever you use this, you lose your turn and it's the next player's turn to roll dice.</h3>
+<h3> The NEW GAME button is used to reset the game and start a new one.</h3>
+
+        <p>Fill the input below to choose the total score you would prefer a winner to be declared.</p>
         <p> 1. This game has two players, playing in rounds.</p>
-        <p>2. In each turn, a player rolls a dice as many times as he wishes. Each result gets added to his "Round"(the
-            white boxes with curved edges)
-            score.</p>
-        <p>3. BUT, if the player rolls a one (1), all his "Round" score gets lost. After that, it's the second player
+        <p>2. In each turn, a player rolls a dice as many times as he/she wishes. Each result gets added to his/her "Round-Score".</p>
+        <p>3. BUT, if the player rolls a one(1), you lose your "Round-score", and after that, it's the second player's
             turn.</p>
-        <p>4. The player can choose to "HOLD", by pressing the hold button so as to save the numbers previously rolled
-            in his round to his GLOBAL SCORE(which is the score underneath the player name) which means that his "Round"
-            score gets added to his GLOBAL score. After
-            that, it's the next player turn.</p>
-        <p>5.Fill the input below to choose the total score you would prefer a winner to be declared.</p>
+        <p>4. But you can choose to "HOLD", by pressing the hold button so as to save the numbers previously rolled
+            in your round to your GLOBAL SCORE.</p>
 
     </div>
 
     <p class="ent">You have to fill this box by the right side to set your preferred total amassed point for a winner to be
-        declared.   <input type="number" class="scoreboard">   <button type="button" onclick="getInput();">Enter</button></p>
+        declared, or else it announces winner with any score greater than zero(0).  <input type="number" class="scoreboard">   <button type="button" onclick="getInput();">Enter</button></p>
     
 
 
     <a href="http://www.facebook.com/geefreeze" target="_blank" onclick="return clicke()">Click me to go to Fr!zz's facebook page...</a>
 
 
-    <h3 class="kanmi">Welcome to Kanmi's game, enjoy!!!</h3>
+    <h3 class="kanmi">Welcome to Kanmi's game, enjoy!!! 🤗</h3>
     <div class="wrapper clearfix">
         <div class="button-new"><button class="btn-new">NEW GAME</button></div>
         <div class="player-0 box ">
