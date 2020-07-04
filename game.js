@@ -144,4 +144,5 @@ function doAnimation() {
     kanm.style.left = newLocation + 'px';
 }
 
+alert('Please if you're on mobile, kindly tilt your phone to the portrait mode for better viewing. Thanks.')
 setInterval(doAnimation, 30);
