@@ -27,7 +27,7 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
         diceDom.style.display = 'inline';
 
 
-        diceDom.src = '../dice-' + dice + '.png';
+        diceDom.src = './dice-' + dice + '.png';
         // add the score to the round score
         roundScore += dice;
         document.querySelector('.current-score-' + activePlayer).textContent = roundScore;
@@ -145,5 +145,5 @@ function doAnimation() {
     kanm.style.left = newLocation + 'px';
 }
 
-alert('Please if you\'re on mobile, kindly tilt your phone to the landscape mode for better viewing. Thanks.');
-setInterval(doAnimation, 30);
+//alert('Please if you\'re on mobile, kindly tilt your phone to the landscape mode for better viewing. Thanks.');
+//setInterval(doAnimation, 30);
